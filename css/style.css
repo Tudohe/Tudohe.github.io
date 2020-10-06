@@ -16,15 +16,39 @@ html {
 
 /**/
 
+.lamp {
+  background-image: url("/img/bigger-lamp.png");
+}
+
+.background {
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex a {
+  font-weight: bold;
+  color: #fff;
+} 
+
 .products h1 {
   font-weight: 300;
   font-size: 100px;
   line-height: 125px;
 }
 
+.products h2 {
+  font-weight: 300;
+}
+
 .products .text {
   flex: 1; 
   width: 100%;
+  min-width: 720px;
   max-width: 800px;
   background-color: #FFB130;
   padding: 80px 0;
@@ -91,6 +115,30 @@ html {
 .hidraulic .front {
   background-image: url('/img/bottom-left.svg');
   background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  content: " ";
+  flex: 1;
+  background-size: cover;
+  height: 100vh;
+}
+
+.spda {
+  background-image: url("../img/raio.png");
+  background-position-y: top;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.spda h1 {
+  text-align: right;
+}
+
+.spda .front {
+  background-image: url('/img/top-left.svg');
+  background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
   content: " ";
@@ -99,5 +147,24 @@ html {
   height: 100vh;
 }
 
+.fire {
+  background-image: url("../img/extintor.png");
+  background-position-y: bottom;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+}
 
-/** end of this div **/
+.fire .front {
+  background-image: url('/img/bottom-right.svg');
+  background-repeat: no-repeat;
+  background-position-x: left;
+  content: "";
+  flex: 1;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+/** end of this section **/
