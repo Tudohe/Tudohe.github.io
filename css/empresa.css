@@ -190,11 +190,11 @@ h3 {
   height: 497px;
 }
 
-h2, p {
+.footer-background h2, .footer-background p {
   color: #fff;
 }
 
-h2 {
+.footer-background h2 {
   font-size: 36px;
   margin: 0;
   padding-top: 77px;
