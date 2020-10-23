@@ -101,7 +101,7 @@ html {
 }
 
 .eletric .front {
-  background-image: url('/img/top-right.svg');
+  background-image: url('../img/top-right.svg');
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: left;
@@ -125,7 +125,7 @@ html {
 }
 
 .hidraulic .front {
-  background-image: url('/img/bottom-left.svg');
+  background-image: url('../img/bottom-left.svg');
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;
@@ -149,7 +149,7 @@ html {
 }
 
 .spda .front {
-  background-image: url('/img/top-left.svg');
+  background-image: url('../img/top-left.svg');
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
@@ -169,7 +169,7 @@ html {
 }
 
 .fire .front {
-  background-image: url('/img/bottom-right.svg');
+  background-image: url('../img/bottom-right.svg');
   background-repeat: no-repeat;
   background-position-x: left;
   content: "";
@@ -222,7 +222,7 @@ html {
 }
 
 .social .front {
-  background-image: url('/img/social-triangle.svg');
+  background-image: url('../img/social-triangle.svg');
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
