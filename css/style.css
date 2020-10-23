@@ -96,6 +96,7 @@ html {
   background-position-y: top;
   background-position-x: right;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
 }
 
@@ -179,3 +180,53 @@ html {
 
 
 /** end of this section **/
+
+.project-background {
+  background-image: url("../img/regua.png");
+  background-position-y: top;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+}
+
+.project-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project h1 {
+  max-width: 496px;
+  margin-top: 20%;
+  color: #fff;
+}
+
+.project p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: right;
+  margin-top: 25%;
+  color: #fff;
+}
+
+
+.social {
+  background-image: url("../img/social.png");
+  background-position-y: top;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.social h1 {
+  text-align: right;
+}
+
+.social .front {
+  background-image: url('/img/social-triangle.svg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: right;
+  content: " ";
+  flex: 1;
+  height: 100vh;
+}

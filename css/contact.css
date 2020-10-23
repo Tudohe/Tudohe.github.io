@@ -1,0 +1,48 @@
+p, a {
+  font-size: 24px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1000px;
+
+}
+
+.input-flex input {
+  margin-bottom: 53px;
+  max-width: 416px;
+  border: solid 1px #cacaca;
+  height: 40px;
+}
+
+.input-flex label {
+  margin-bottom: 8px;
+}
+
+input::placeholder {
+  color: #898989;
+  padding: 10px;
+}
+
+.flex-input {
+  display: flex;
+}
+
+.flex-direction {
+  display: flex;
+  flex-direction: column; 
+}
+
+.mensage {
+  height: 246px;
+}
+
+.contact p {
+  text-align: center;
+}
