@@ -348,10 +348,135 @@ main section.hero.fire .content h2 {
 
 main section.hero.fire .image {
   background: url("../img/extintor.png");
+  height: 600px;
+  width: 600px;
   right: 0;
   bottom: 0;
 }
 
 main section.hero.fire .image .cover {
   background: url("../img/bottom-right.svg");
+  height: 600px;
+  width: 600px;
+}
+
+main section.project {
+  background: url("../img/caneta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+main section.project .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+main section.project .container > div {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+main section.project h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: var(--off-color);
+  line-height: 200%;
+}
+
+main section.project p {
+  font-size: 48px;
+  color: var(--off-color);
+  line-height: 200%;
+  text-align: right;
+  max-width: 350px;
+}
+
+main section.project p em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+main section.hero.social .content {
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 200px;
+}
+
+main section.hero.social .content h2 {
+  text-align: right;
+  font-size: 48px;
+  margin-bottom: 40px;
+  width: 800px;
+}
+
+main section.hero.social .content p {
+  font-size: 26px;
+  max-width: 710px;
+  line-height: 150%;
+}
+
+main section.hero.social .content p em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+main section.hero.social .image {
+  background: url("../img/social.png");
+  left: 0;
+  top: 0;
+}
+
+main section.hero.social .image .cover {
+  background: url("../img/top-left.svg");
+  position: absolute;
+  background-position: bottom left;
+}
+
+main section.contact {
+  height: 600px;
+  background-color: var(--secondary-color);
+  color: var(--off-color);
+  padding-top: 80px;
+}
+
+main section.contact h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+main section.contact .divisor {
+  width: 60px;
+  height: 6px;
+  margin: 20px auto;
+  background-color: var(--primary-color);
+}
+
+main section.contact .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+main section.contact .content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main section.contact .content img {
+  margin-bottom: 20px;
+}
+
+main section.contact .content span {
+  font-size: 18px;
+  margin: 0 auto 20px auto;
+}
+
+main section.contact .content p {
+  font-size: 24px;
+  color: var(--off-dark-color);
 }

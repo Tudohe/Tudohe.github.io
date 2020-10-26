@@ -10,6 +10,5 @@ function selectProduct(titleElement) {
     
     document.querySelector('.selector .contents .' + title).style.display = 'initial';
     document.querySelector('.selector .contents .' + title).classList.add('selected');
-
   }
 }
