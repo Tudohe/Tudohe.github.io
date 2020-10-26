@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  color: #fff;
+  color: var(--principal);
   font-size: 30px;
   font-weight: bold;
 }
@@ -101,8 +101,6 @@ textarea {
 .number h3 {
   font-weight: bold;
   margin: 0;
-  color: var(--principal);
-
 }
 
 hr {
@@ -126,6 +124,11 @@ iframe {
   height: 164px;
   background-color: var(--principal-yellow);
   position: relative;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 36px;
 }
 
 .footer p {
@@ -178,6 +181,13 @@ iframe {
   justify-content: space-between;
 }
 
+.col-one-third {
+  display: block;
+  position: relative;
+  margin-right: 4%;
+  float: left;
+}
+
 .col-one-third h3 {
   padding-top: 77px;
 }
@@ -207,9 +217,6 @@ iframe {
   margin-top: 28px;
 }
 
-.col-one-third {
-  display: block;
-  position: relative;
-  margin-right: 4%;
-  float: left;
+.social-network a:hover{
+  opacity: 0.8;
 }
