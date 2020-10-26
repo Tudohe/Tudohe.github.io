@@ -4,52 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/default.css">
   <link rel="stylesheet" href="/css/contact.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="/css/default.css">
+  <title>Contato</title>
 </head>
 <body>
   <header>
     <div class="yellow-background"></div>
     <div class="container">
-      <img src="/img/logo.svg" alt="Hamburguer svg">
+      <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
       <nav class="header-nav">
-        <a id="selected" href="">EMPRESA</a>
-        <a href="">PRODUTOS</a>
+        <a href="empresa.html">EMPRESA</a>
+        <a href="index.html">PRODUTOS</a>
         <a href="">PARCEIROS</a>
-        <a href="">CONTATO</a>
+        <a id="selected" href="#">CONTATO</a>
       </nav>
     </div>
   </header>
   
   <section>
-    <h1>CONTATO</h1>
+    <h1><strong>CONTATO</strong></h1>
     <h3>Tem alguma dúvida? Nos envie uma <strong>mensagem.</strong></h3>
  
   </section>
-    <div class="flex-input">
-      <div class="flex-direction container">
-        <div class="input-flex ">
-          <label for="">Nome</label>
-          <input type="text" placeholder="Nome">
-        </div>
-        <div class="input-flex ">
-          <label for="">Email</label>
-          <input type="text" placeholder="Email">
-        </div>
-        <div class="input-flex ">
-          <label for="">Telefone</label>
-          <input type="text" placeholder="Telefone">
-        </div>
-      </div>
-        <div class="mensage input-flex ">
-          <label for="">Mensagem</label>
-          <input type="text">
-        </div>
+  
+  <section class="contact container">
+    <p>Também estamos disponíveis nos seguintes canais:</p>
+    <div class="number">
+      <img src="../img/chamada-telefonica.svg" alt="">
+      <img src="../img/whatsapp.svg" alt="">
+    </div>
+    <div class="number">
+      <p>• Telefone •</p>
+      <p>• Whatsapp •</p>
+    </div>
+    <div class="number">
+      <h3>(65) 3023-2330</h3>
+      <h3>(65) 98888-7777</h3>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.741014501366!2d-56.10201560366034!3d-15.60054197139618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db192d8fc3fd1%3A0x1e21dcd14cce581!2sCentro%20Geod%C3%A9sico%20da%20Am%C3%A9rica%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1593657775655!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+    </div>
+  </section>
+
+  <div class="yellow-block">
+    <div class="footer">
+      <p><a href="#">Quer mais informações? <strong>Fale conosco.</strong></a></p>
+    </div>
+  </div>  
+  <footer>
+    <div class="footer-background">
+      <div class="container">
+        <h2 h2><strong>TUDO</strong></h2>   
+        <p><strong>Hidráulica e Elétrica</strong></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <a href="">Telefone: (65) 3023-2330</a>
+        <a href="">Email: contato@mouraeh.com.br</a>
+        <a href="">Whatsapp: (65) 98888-7777</a>
       </div>
     </div>
-  <section class="contact">
-    <p>Também estamos disponíveis nos seguintes canais:</p>
-  </section>
+  </footer>
 </body>
 </html>
