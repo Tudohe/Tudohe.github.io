@@ -1,0 +1,236 @@
+@import url('default.css');
+
+@keyframes show-background {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-product {
+  0% {
+    margin-top: 20px;
+    opacity: 0.8;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-to-position {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  50% {
+
+  }
+  75% {
+
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+header .carousel {
+  width: 100%;
+  height: calc(100vh - 78px - 10px);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .carousel li.selected-slide {
+  width: 100%;
+  height: calc(100vh - 78px - 10px);
+  min-height: 560px;
+  position: absolute;
+  z-index: 1;
+}
+
+header .carousel #slide1 {
+  background: url("../img/slide1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+}
+
+header .carousel #slide2 {
+  background: url("../img/slide2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+  display: none;
+}
+
+header .carousel .content {
+  width: calc(100% - 144px);
+  height: calc(100vh - 78px - 10px - 100px);
+  min-height: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px 0 16px;
+  text-align: right;
+  animation: slide-to-position 1s;
+}
+
+header .carousel .content h1,
+header .carousel .content h2,
+header .carousel .content p {
+  color: var(--off-color);
+}
+
+header .carousel .content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+}
+
+header .carousel .content h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0  0 16px 0;
+}
+
+header .carousel .content p {
+  font-size: 1.5em;
+  line-height: 200%;
+}
+
+header .carousel .indicators {
+  width: calc(100% - 144px);
+  height: calc(100vh - 78px - 10px - 100px);
+  min-height: 460px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 32px 0 16px;
+}
+
+header .carousel .indicators button {
+  background: var(--off-color);
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+header .carousel .indicators button + button {
+  margin-left: 16px;
+}
+
+header .carousel .indicators button.selected {
+  background-color: var(--primary-color);
+}
+
+header .carousel .controllers {
+  width: 100%;
+  height: calc(100vh - 78px - 10px);
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .carousel .controllers button {
+  background: transparent;
+  border: none;
+  padding: 0 16px;
+}
+
+header .carousel .controllers button:hover {
+  cursor: pointer;
+}
+
+header .carousel .controllers button img {
+  width: 40px;
+}
+
+main section.products {
+  background: url("../img/lampada.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+main section.products h2 {
+  color: var(--off-color);
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+main section.products .selector {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+main section.products .selector .titles h3 {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+main section.products .selector .titles h3:hover {
+  color: var(--primary-color);
+}
+
+main section.products .selector .titles h3.selected {
+  color: var(--primary-color);
+}
+
+main section.products .selector .titles h3 + h3 {
+  margin-top: 20px;
+}
+
+main section.products .selector .titles h3,
+main section.products .selector .contents p,
+main section.products .selector .contents li {
+  color: var(--off-color);
+}
+
+main section.products .selector .contents .hidraulica,
+main section.products .selector .contents .spda,
+main section.products .selector .contents .combate-incendio {
+  display: none;
+}
+
+main section.products .selector .contents ul {
+  width: 400px;
+  animation: show-product .5s;
+}
+
+main section.products .selector .contents li {
+  font-size: 20px;
+}
+
+main section.products .selector .contents li + li {
+  margin-top: 16px;
+}
+
+main section.products .all-products {
+  height: 100px;
+  margin-top: 40px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+main section.products .all-products:hover {
+  text-decoration: underline;
+}
