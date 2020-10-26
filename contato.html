@@ -3,36 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/contact.css">
-  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
   <title>Contato</title>
 </head>
 <body>
   <header>
-    <div class="yellow-background"></div>
     <div class="container">
-      <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-      <nav class="header-nav">
-        <a href="empresa.html">EMPRESA</a>
-        <a href="index.html">PRODUTOS</a>
-        <a href="">PARCEIROS</a>
-        <a id="selected" href="#">CONTATO</a>
+      <div class="menu">
+        <a href="index.html">
+          <img src="assets/img/logo.svg" alt="Logotipo da Tudo Hidráulica e Elétrica">
+        </a>
+        <nav>
+          <a href="empresa.html" class="selected">Empresa</a>
+          <a href="#">Produtos</a>
+          <a href="#">Parceiros</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
       </nav>
     </div>
   </header>
   
   <section>
     <h1><strong>CONTATO</strong></h1>
-    <h3>Tem alguma dúvida? Nos envie uma <strong>mensagem.</strong></h3>
- 
+    <h2>Tem alguma dúvida? Nos envie uma <strong>mensagem.</strong></h2>
   </section>
+
+  <main class="container">
+    <form>
+      <div class="contact-form">
+        <div>
+          <p>
+            <label for="name">Nome</label>
+            <input type="text" id="name"/>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </p>
+          <p>
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone"/>
+          </p>
+        </div>
+        <div>
+          <p>
+            <label for="message">Mensagem</label>
+            <textarea rows="14" cols="5" id="message"></textarea>
+          </p>
+        </div>
+      </div>
+    </form>
+    <div class="actions">
+      <a href="" >Enviar</a>
+    </div>
+  </main>
   
   <section class="contact container">
-    <p>Também estamos disponíveis nos seguintes canais:</p>
+    <h2>Também estamos disponíveis nos seguintes canais:</h2>
     <div class="number">
-      <img src="../img/chamada-telefonica.svg" alt="">
-      <img src="../img/whatsapp.svg" alt="">
+      <img src="assets/img/chamada-telefonica.svg" alt="">
+      <img src="assets/img/whatsapp.svg" alt="">
     </div>
     <div class="number">
       <p>• Telefone •</p>
@@ -52,7 +84,7 @@
     </div>
   </section>
 
-  <div class="yellow-block">
+  <div class="menu-background">
     <div class="footer">
       <p><a href="#">Quer mais informações? <strong>Fale conosco.</strong></a></p>
     </div>
@@ -60,12 +92,32 @@
   <footer>
     <div class="footer-background">
       <div class="container">
-        <h2 h2><strong>TUDO</strong></h2>   
-        <p><strong>Hidráulica e Elétrica</strong></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-        <a href="">Telefone: (65) 3023-2330</a>
-        <a href="">Email: contato@mouraeh.com.br</a>
-        <a href="">Whatsapp: (65) 98888-7777</a>
+        <div class="col-two-third">
+          <div class="col-one-third">
+            <h3><strong>TUDO</strong></h3>   
+            <p><strong>Hidráulica e Elétrica</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div>
+              <a href="">Telefone: (65) 3023-2330</a>
+              <a href="">Email: contato@mouraeh.com.br</a>
+              <a href="">Whatsapp: (65) 98888-7777</a>
+            </div>
+
+          </div>
+          <div class="col-one-third">
+            <a href="">Home</a>
+            <a href="">Produtos</a>
+            <a href="">Parceiros</a>
+            <a href="">Contato</a>
+          </div>
+          <div class="col-one-third col-last">
+            <p>Nos acompanhe</p>
+            <div class="social-network">
+              <img src="assets/img/instagram.svg" alt="instagram logo">
+              <img src="assets/img/facebook.svg" alt="facebook logo">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
