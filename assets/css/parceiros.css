@@ -22,65 +22,12 @@ main h1 {
   font-weight: 100;
 }
 
-main p {
-  margin: 0;
-  line-height: 200%;
-}
-
 hr {
   margin: 60px auto;
   width: 60px;
   height: 5px;
   background-color: var(--principal-yellow);
   border: 0;
-}
-
-/* images */ 
-
-.img-1 p, .img-2 p, .img-3 p {
-  max-width: 272px;
-}
-
-.information {
-  display: flex;
-  justify-content: space-between;
-}
-
-.information h4 {
-  font-size: 20px;
-}
-
-.information h4, .information p {
-  margin-top: 30px;
-}
-
-/* social */ 
-
-.social-part {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-part img {
-  position: relative;
-  top: 23px;
-}
-
-.social {
-  display: flex;
-  flex-direction: column;
-}
-
-section > h3 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 60px;
-}
-
-.social p {
-  width: 516px;
-  line-height: 200%;
-  margin-top: 5%;
 }
 
 

@@ -5,6 +5,10 @@
   --principal: #414241
 }
 
+h1, h2, h3, h4 {
+  font-weight: 100;
+}
+
 a {
   cursor: pointer;
 }
@@ -22,7 +26,6 @@ h1 {
 h2 {
   font-size: 24px;
   text-align: center;
-  font-weight: 100;
   margin: 60px 0;
 }
 
@@ -61,6 +64,7 @@ input {
 textarea {
   height: 100%;
   width: 416px;
+  padding-top: 10px;
 }
 
 .actions {
