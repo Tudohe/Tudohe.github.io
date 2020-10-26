@@ -160,9 +160,9 @@ header .carousel .controllers button img {
 
 main section.products {
   background: url("../img/lampada.jpg");
-  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
   padding: 100px 0;
 }
 
@@ -233,4 +233,125 @@ main section.products .all-products {
 
 main section.products .all-products:hover {
   text-decoration: underline;
+}
+
+main section.hero {
+  height: 750px;
+  width: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+main section.hero .content {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+main section.hero .content h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  width: 500px;
+  line-height: 130%;
+}
+
+main section.hero .content a {
+  height: 100px;
+  margin-top: 20px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+main section.hero .content a:hover {
+  text-decoration: underline;
+}
+
+main section.hero .image {
+  height: 500px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: " ";
+  position: absolute;
+}
+
+main section.hero .cover {
+  height: 500px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: " ";
+}
+
+main section.hero.eletric .image {
+  background: url("../img/lampada-pequena.jpg");
+  right: 0;
+}
+
+main section.hero.eletric .image .cover {
+  background: url("../img/top-right.svg");
+}
+
+main section.hero.hidraulic .content {
+  align-items: flex-end;
+}
+
+main section.hero.hidraulic .content h2 {
+  width: 600px;
+  text-align: right;
+}
+
+main section.hero.hidraulic .image {
+  background: url("../img/maquina-hidraulica.png");
+  left: 0;
+  bottom: 0;
+}
+
+main section.hero.hidraulic .image .cover {
+  background: url("../img/bottom-left.svg");
+}
+
+main section.hero.spda .content {
+  align-items: flex-end;
+}
+
+main section.hero.spda .content h2 {
+  width: 600px;
+  text-align: right;
+}
+
+main section.hero.spda .image {
+  background: url("../img/raio.png");
+  left: 0;
+  top: 0;
+}
+
+main section.hero.spda .image .cover {
+  background: url("../img/top-left.svg");
+  position: absolute;
+  background-position: bottom left;
+}
+
+main section.hero.fire .content h2 {
+  width: 600px;
+}
+
+main section.hero.fire .image {
+  background: url("../img/extintor.png");
+  right: 0;
+  bottom: 0;
+}
+
+main section.hero.fire .image .cover {
+  background: url("../img/bottom-right.svg");
 }
