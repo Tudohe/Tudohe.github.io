@@ -13,8 +13,3 @@ function selectProduct(titleElement) {
 
   }
 }
-
-window.onload = function() {
-  const titles = document.getElementsByClassName('titles')[0].children;
-  console.log(titles);
-}
