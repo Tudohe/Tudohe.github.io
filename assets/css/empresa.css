@@ -61,6 +61,10 @@ hr {
   justify-content: space-between;
 }
 
+.social-part p {
+  margin-left: 60px;
+}
+
 .social-part img {
   position: relative;
   top: 23px;
@@ -78,7 +82,7 @@ section > h3 {
 }
 
 .social p {
-  width: 516px;
+  width: 75%;
   line-height: 200%;
   margin-top: 5%;
 }
@@ -125,7 +129,8 @@ footer h3 {
 .footer-background {
   width: 100%;
   background-color: #656665;
-  height: 497px;
+  min-height: 450px;
+  height: 100%;
 }
 
 .footer-background h2, .footer-background p {
@@ -198,4 +203,55 @@ footer h3 {
 
 .social-network a:hover{
   opacity: 0.8;
+}
+
+@media (max-width: 980px) 
+{
+
+  .container {
+    max-width: 600px;
+  }
+
+  .img-1 p, .img-2 p, .img-3 p {
+    margin-bottom: 30px;
+  }
+
+  .information, .social-part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main p {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .social p {
+    margin: 60px auto 0 auto;
+  }
+
+  .menu-background {
+    height: 100px;
+    background-color: var(--principal-yellow);
+  }
+
+  .footer a {
+    font-size: 18px;
+  }
+
+  .col-two-third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-network {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+    padding-bottom: 30px;
+
+  }
+
 }
