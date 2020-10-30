@@ -9,14 +9,6 @@ h1, h2, h3, h4 {
   font-weight: 100;
 }
 
-a {
-  cursor: pointer;
-}
-
-strong {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 100px;
   margin: 60px 0;
@@ -106,9 +98,11 @@ textarea {
   font-size: 18px;
 }
 
-.number h3 {
+.number span {
   font-weight: bold;
   margin: 0;
+  font-size: 20px;
+  color: var(--principal);
 }
 
 hr {
