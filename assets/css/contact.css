@@ -1,10 +1,5 @@
 @import url('default.css');
 
-:root {
-  --principal-yellow: #FFB130;
-  --principal: #414241
-}
-
 h1, h2, h3, h4 {
   font-weight: 100;
 }
@@ -22,7 +17,7 @@ h2 {
 }
 
 h3 {
-  color: var(--principal);
+  color: var(--secondary-color);
   font-size: 30px;
   font-weight: bold;
 }
@@ -43,9 +38,10 @@ label {
 input, textarea {
   margin-bottom: 44.3px;
   display: block;
-  border: 1px solid #CACACA;
+  border: 1px solid var(--off-dark-color);
   padding-left: 10px;
   margin-top: 8px;
+  transition: border-color .2s;
 }
 
 input {
@@ -59,13 +55,18 @@ textarea {
   padding-top: 10px;
 }
 
+input:focus, 
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
 .actions {
   width: 100%;
   text-align: right;
 }
 
 .actions a {
-  background-color: var(--principal-yellow);
+  background-color: var(--primary-color);
   border: none;
   color: #fff;
   padding: 11px 52px;
@@ -78,7 +79,7 @@ textarea {
 }
 
 .actions a:hover {
-  background-color: var(--principal);
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
@@ -94,7 +95,7 @@ textarea {
 
 .number p {
   margin: 0;
-  color: #989898;
+  color: var(--off-dark-color);
   font-size: 18px;
 }
 
@@ -102,14 +103,14 @@ textarea {
   font-weight: bold;
   margin: 0;
   font-size: 20px;
-  color: var(--principal);
+  color: var(--secondary-color);
 }
 
 hr {
   margin: 60px auto;
   width: 60px;
   height: 5px;
-  background-color: var(--principal-yellow);
+  background-color: var(--primary-color);
   border: 0;
 }
 
@@ -119,17 +120,15 @@ iframe {
   margin-bottom: 60px;
 }
 
-/* footer */
-
 .menu-background {
   width: 100%;
   height: 164px;
-  background-color: var(--principal-yellow);
+  background-color: var(--primary-color);
   position: relative;
 }
 
 footer h3 {
-  color: #fff;
+  color: var(--off-color);
   font-size: 36px;
 }
 
@@ -146,18 +145,18 @@ footer h3 {
 }
 
 .footer a:hover {
-  color: var(--principal);
+  color: var(--secondary-color);
 }
 
 .footer-background {
   width: 100%;
-  background-color: #656665;
+  background-color: var(--off-dark-color);
   min-height: 450px;
   height: 100%;
 }
 
 .footer-background h2, .footer-background p {
-  color: #fff;
+  color: var(--off-color);
 }
 
 .footer-background h2 {
@@ -173,7 +172,7 @@ footer h3 {
 }
 
 .footer-background a {
-  color: #fff;
+  color: var(--off-color);
   display: flex;
   flex-direction: column;
   line-height: 200%;
@@ -185,7 +184,7 @@ footer h3 {
 }
 
 .col-two-third a:hover {
-  color: var(--principal-yellow);
+  color: var(--primary-color);
 }
 
 .col-one-third {
@@ -252,7 +251,7 @@ footer h3 {
 
   .menu-background {
     height: 100px;
-    background-color: var(--principal-yellow);
+    background-color: var(--primary-color);
   }
 
   .footer a {
@@ -273,5 +272,4 @@ footer h3 {
     padding-bottom: 30px;
 
   }
-
 }

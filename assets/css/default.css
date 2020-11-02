@@ -201,3 +201,41 @@ footer h3 {
 .spacer {
   height: 100px;
 }
+
+.balloon {
+  padding: 10px 0 10px 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 9999;
+  background-color: var(--off-color);
+  width: 170px;
+  -webkit-box-shadow: -2px 3px 8px 2px rgba(0,0,0,0.51); 
+  box-shadow: -2px 3px 8px 2px rgba(0,0,0,0.51);
+}
+
+
+.balloon .content {
+  padding: 0;
+}
+
+.balloon .content > div {
+  display: inline;
+  margin: auto;
+}
+
+.balloon .image {
+  padding: 10px;
+}
+
+.balloon .image img {
+  margin-bottom: -5px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.balloon .text {
+  padding: 10px;
+  background-color: #58bc55;
+  color: var(--off-color);
+}
