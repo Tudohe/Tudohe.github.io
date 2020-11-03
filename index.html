@@ -3,9 +3,255 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tudo Hidráulica e Elétrica</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"> 
+  <title>TUDO Hidraulica e Eletrica</title>
 </head>
-<body>
-  <h1>Em construção</h1>
-</body>
+  <body>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=556533210009&text=Ol%C3%A1.%20Poderia%20me%20ajudar%20com%20mais%20informa%C3%A7%C3%B5es%3F">
+      <div class="balloon">
+        <div class="content">
+          <div class="image">
+            <img src="assets/img/whatsapp-color.svg" alt="Logo do WhatsApp">
+          </div>
+          <div class="text">
+            <span>Fale conosco</span>
+          </div>
+        </div>
+      </div>
+    </a>
+    <header>
+      <div class="carousel">
+        <ul class="slides">
+          <li id="slide1" class="selected-slide">
+            <div class="content">
+              <h1>TUDO</h1>
+              <h2>Hidráulica e Elétrica</h2>
+              <p>Hidráulica</p>
+              <p>Elétrica</p>
+              <p>SPDA</p>
+              <p>Combate a incêndio</p>
+            </div>
+          </li>
+          <li id="slide2">
+            <div class="content">
+              <h1>SPDA</h1>
+              <h2>Sistema de Proteção contra Descargas Elétricas (Pára-raios)</h2>
+              <p>Materiais para SPDA</p>
+              <p>Mão de obra especializada</p>
+            </div>
+          </li>
+        </ul>
+        <div class="controllers">
+          <button id="previous" class="previous">
+            <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
+          </button>
+          <button id="next" class="next">
+            <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
+          </button>
+        </div> 
+        <div class="indicators">
+          <button class="indicator1 selected"></button>
+          <button class="indicator2"></button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="menu">
+          <a href="index.html">
+            <img src="assets/img/logo.svg" alt="Logotipo da Tudo Hidráulica e Elétrica">
+          </a>
+          <nav>
+            <a href="empresa.html">Empresa</a>
+            <a href="eletrica.html">Produtos</a>
+            <a href="parceiros.html">Parceiros</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="products">
+        <div class="container">
+          <h2><span class="thin">Nossos</span> Produtos</h2>
+          <div class="selector">
+            <div class="titles">
+              <h3 data-title="produto-eletrica" onclick="selectProduct(this)" class="selected">Elétrica</h3>
+              <h3 data-title="produto-hidraulica" onclick="selectProduct(this)">Hidráulica</h3>
+              <h3 data-title="produto-spda" onclick="selectProduct(this)">SPDA</h3>
+              <h3 data-title="produto-combate-incendio" onclick="selectProduct(this)">Combate a incêndio</h3>
+            </div>
+            <div class="contents">
+              <div class="eletrica selected">
+                <ul>
+                  <li>Materiais e ferramentas</li>
+                  <li>Cabos e conexões</li>
+                  <li>Iluminação</li>
+                </ul>
+              </div>
+              <div class="hidraulica">
+                <ul>
+                  <li>Tubos e conexões</li>
+                  <li>Máquinas especializadas</li>
+                  <li>Materiais em geral</li>
+                </ul>
+              </div>
+              <div class="spda">
+                <ul>
+                  <li>Materiais para pára-raios</li>
+                  <li>Mão de obra especializada</li>
+                </ul>
+              </div>
+              <div class="combate-incendio">
+                <ul>
+                  <li>Extintores</li>
+                  <li>EPIs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="all-products">
+            <span>Ver todos os produtos</span>
+            <img src="assets/img/chevron-right-yellow.svg" alt="Seta para direita" />
+          </a>
+        </div> 
+      </section> 
+      <section class="hero eletric">
+        <div class="content">
+          <h2><div class="thin">Tudo para</div> Elétrica</h2>
+          <a href="eletrica.html">
+            <span>Conheça nossas soluções em elétrica</span>
+            <img src="assets/img/chevron-right-gray.svg" alt="Seta para direita" />
+          </a>
+        </div>
+        <div class="image">
+          <div class="cover"></div>
+        </div>
+      </section>
+      <section class="hero hidraulic">
+        <div class="content">
+          <h2><div class="thin">Tudo <br /> para</div> Hidráulica</h2>
+          <a href="hidraulica.html">
+            <span>Conheça nossas soluções em hidráulica</span>
+            <img src="assets/img/chevron-right-gray.svg" alt="Seta para direita" />
+          </a>
+        </div>
+        <div class="image">
+          <div class="cover"></div>
+        </div>
+      </section>
+      <section class="hero spda">
+        <div class="content">
+          <h2><div class="thin">Tudo <br /> para</div> SPDA</h2>
+          <a href="spda.html">
+            <span>Conheça nossas soluções em SPDA</span>
+            <img src="assets/img/chevron-right-gray.svg" alt="Seta para direita" />
+          </a>
+        </div>
+        <div class="image">
+          <div class="cover"></div>
+        </div>
+      </section>
+      <section class="hero fire">
+        <div class="content">
+          <h2><div class="thin">Tudo <br /> para</div> Combate a Incêndio</h2>
+          <a href="incendio.html">
+            <span>Conheça nossas soluções em Combate a Incêndio</span>
+            <img src="assets/img/chevron-right-gray.svg" alt="Seta para direita" />
+          </a>
+        </div>
+        <div class="image">
+          <div class="cover"></div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="container">
+          <div>
+            <h2><div class="thin">Tem um</div> Projeto?</h2>
+          </div>
+          <div>
+            <p>
+              Fazemos o <em>orçamento</em> do seu <em>projeto</em>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="hero social">
+        <div class="content">
+          <h2><span class="thin">Tudo também para o </span> SOCIAL</h2>
+          <p>
+            A <em>TUDO Hidráulica e Elétrica</em>, assim como todo o Grupo, tem um grande 
+            propósito com o social. Uma de suas características é treinar e contratar jovens, 
+            em idade apta para o trabalho, que se encontram em situação de vulnerabilidade e 
+            são atendidos pelo programa <em>Obras Sociais Menino Chico</em>, que assiste bairros 
+            carentes da Baixada Cuiabana.
+          </p>
+        </div>
+        <div class="image">
+          <div class="cover"></div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h2><span class="thin">Aguardamos seu</span> contato</h2>
+          <div class="divisor"></div>
+          <div class="content">
+            <div>
+              <img src="assets/img/phone-yellow.svg" alt="Telefone">
+              <span>Telefone</span>
+              <p>(65) 99988-8976</p>
+            </div>
+            <div>
+              <img src="assets/img/mail-yellow.svg" alt="Email">
+              <span>Email</span>
+              <p>vendas@mouraeh.com.br</p>
+            </div>
+            <div>
+              <img src="assets/img/whatsapp-yellow.svg" alt="Email">
+              <span>WhatsApp</span>
+              <p>(65) 3321-0009</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more">
+        <div class="container">
+          <p>
+            Quer mais informações? <a href="contato.html"><strong>Fale conosco</strong></a>.
+          </p>
+        </div>
+      </section>  
+    </main>
+    <footer>
+      <div class="footer-background">
+        <div class="container">
+          <div class="col-two-third">
+            <div class="col-one-third">
+              <h3><strong>TUDO</strong></h3>   
+              <p><strong>Hidráulica e Elétrica</strong></p>
+              <div>
+                <a href="">Telefone: (65) 99988-8976</a>
+                <a href="">Email: vendas@mouraeh.com.br</a>
+                <a href="">Whatsapp: (65) 3321-0009</a>
+              </div>
+            </div>
+            <div class="col-one-third">
+              <a href="index.html">Home</a>
+              <a href="eletrica.html">Produtos</a>
+              <a href="parceiros.html">Parceiros</a>
+              <a href="contato.html">Contato</a>
+            </div>
+            <div class="col-one-third col-last">
+              <p>Nos acompanhe</p>
+              <div class="social-network">
+                <a href="http://instagram.com/" target="_blank"><img src="assets/img/instagram.svg" alt="instagram logo"></a>
+                <a href="http://facebook.com/" target="_blank"><img src="assets/img/facebook.svg" alt="facebook logo"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/products.js"></script>
+  </body>
 </html>
