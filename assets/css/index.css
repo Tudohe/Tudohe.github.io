@@ -306,6 +306,13 @@ main section.hero.hidraulic .content {
   align-items: flex-end;
 }
 
+main section.hero.eletric .image,
+ main section.hero.hidraulic .image
+ , main section.hero.spda .image,
+main section.hero.fire .image {
+
+}
+
 main section.hero.hidraulic .content h2 {
   width: 600px;
   text-align: right;
@@ -436,7 +443,7 @@ main section.hero.social .image .cover {
 }
 
 main section.contact {
-  height: 600px;
+  height: 100%;
   background-color: var(--secondary-color);
   color: var(--off-color);
   padding-top: 80px;
@@ -479,4 +486,233 @@ main section.contact .content span {
 main section.contact .content p {
   font-size: 24px;
   color: var(--off-dark-color);
+  margin: 0 auto 50px auto;
+}
+
+@media (max-width: 980px) {
+
+  .container {
+    max-width: 600px;
+  }
+
+  header .carousel {
+    display: none;
+  }
+
+  main section.products h2, main section.products h3 {
+    text-align: center;
+  }
+
+  main section.products h3 {
+    margin-bottom: 30px;
+  }
+
+  main section.products li, main section.products a {
+    margin: 20px auto;
+    text-align: center;
+    list-style: none;
+  }
+  
+  main section.products .selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover {
+    display: none;
+  }
+
+  main section.hero {
+    background: none;
+  }
+
+  main section.hero.eletric .image,
+  main section.hero.hidraulic .image,
+  main section.hero.spda .image,
+  main section.hero.fire .image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+  main section.hero .content h2,
+  main section.hero .content a,
+  main section.hero .content p {
+    color: #fff;
+  }
+
+  main section.hero.eletric .content h2, main section.hero.fire .content h2, main section.hero.eletric .content a, main section.hero.fire .content a {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main section.hero.hidraulic .content h2, main section.hero.spda .content h2, main section.hero.hidraulic .content a, main section.hero.spda .content a {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main section.project .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  main section.project .container > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  main section.project h2, main section.project p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main section.project h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+    color: var(--off-color);
+    line-height: 100%;
+    padding-top: 80px;
+  }
+  
+  main section.project p {
+    font-size: 30px;
+    color: var(--off-color);
+    line-height: 150%;
+    padding-bottom: 80px;
+  }
+
+  main section.hero.social .image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main section.hero.social .content p{
+    margin: 0 auto;
+  }
+
+  main section.hero.social .content h2 {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  main section.contact .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-background {
+    height: 100px;
+    background-color: var(--primary-color);
+  }
+
+  .footer a {
+    font-size: 18px;
+  }
+
+  .col-two-third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-network {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+    padding-bottom: 30px;
+
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .container {
+    max-width: 400px;
+  }
+
+  header .menu {
+    flex-direction: column;
+  }
+
+  header .menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    line-height: 200%;
+  }
+
+  header .menu img {
+    margin-bottom: 20px;
+  }
+
+  header .menu nav a + a {
+    margin-left: 0;
+  }
+ 
+  main section.hero.eletric h2,
+  main section.hero.hidraulic h2,
+  main section.hero.spda h2,
+  main section.hero.fire h2 {
+    font-size: 40px;
+    max-width: 300px;
+  }
+  
+
+  main section.project h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--off-color);
+    line-height: 100%;
+    padding-top: 80px;
+  }
+  
+  main section.project p {
+    font-size: 30px;
+    color: var(--off-color);
+    line-height: 150%;
+    padding-bottom: 80px;
+  }
+
+
+  main section.hero.social .content h2 {
+    max-width: 400px;
+    max-height: 100%;
+    font-size: 30px;
+  }
+
+  main section.hero.social .content p {
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  main section.hero.social .image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main section.contact h2 {
+    font-size: 30px;
+  }
+
+  .balloon {
+    display: none;
+  }
+
+  main section.more p a{
+    font-size: 18px;
+  }
+
+  main section.more p {
+    font-size: 18px;
+  }
 }
