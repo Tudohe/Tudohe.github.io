@@ -306,6 +306,13 @@ main section.hero.hidraulic .content {
   align-items: flex-end;
 }
 
+main section.hero.eletric .image,
+ main section.hero.hidraulic .image
+ , main section.hero.spda .image,
+main section.hero.fire .image {
+
+}
+
 main section.hero.hidraulic .content h2 {
   width: 600px;
   text-align: right;
@@ -479,4 +486,41 @@ main section.contact .content span {
 main section.contact .content p {
   font-size: 24px;
   color: var(--off-dark-color);
+}
+
+@media (max-width: 980px) 
+{
+
+  .container {
+    max-width: 600px;
+  }
+
+  header .carousel {
+    display: none;
+  }
+  
+  .cover {
+    display: none;
+  }
+
+  main section.hero {
+    background: none;
+  }
+
+  main section.hero.eletric .image,
+  main section.hero.hidraulic .image,
+  main section.hero.spda .image,
+  main section.hero.fire .image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ main section.hero .content h2, main section.hero .content a {
+   color: #fff;
+}
+
+
+
 }
