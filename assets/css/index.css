@@ -634,7 +634,7 @@ main section.contact .content p {
 @media (max-width: 450px) {
 
   .container {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   header .menu {
@@ -683,14 +683,13 @@ main section.contact .content p {
 
 
   main section.hero.social .content h2 {
-    max-width: 400px;
-    max-height: 100%;
+    max-width: 300px;
     font-size: 30px;
   }
 
   main section.hero.social .content p {
-    max-width: 200px;
-    font-size: 14px;
+    max-width: 80%;
+    font-size: 12px;
   }
 
   main section.hero.social .image {

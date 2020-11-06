@@ -179,3 +179,64 @@ footer h3 {
 
   }
 }
+
+@media (max-width: 450px) {
+
+  .container {
+    max-width: 300px;
+  }
+
+  header .menu {
+    flex-direction: column;
+  }
+
+  .product-menu nav {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-menu nav a {
+    font-size: 14px;
+    align-items: center;
+    line-height: 200%;
+    text-align: center;
+  }
+
+  header .menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    line-height: 200%;
+  }
+
+  header .menu img {
+    margin-bottom: 20px;
+  }
+
+  header .menu nav a + a {
+    margin-left: 0;
+  }
+
+  main section.more p a{
+    font-size: 18px;
+  }
+
+  main section.more p {
+    font-size: 18px;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+
+  .companies img {
+    width: 30%;
+    height: 80%;
+  }
+}
