@@ -306,13 +306,6 @@ main section.hero.hidraulic .content {
   align-items: flex-end;
 }
 
-main section.hero.eletric .image,
- main section.hero.hidraulic .image
- , main section.hero.spda .image,
-main section.hero.fire .image {
-
-}
-
 main section.hero.hidraulic .content h2 {
   width: 600px;
   text-align: right;
@@ -367,6 +360,13 @@ main section.hero.fire .image .cover {
   width: 600px;
 }
 
+main section.company {
+  background: url("../img/empresa.png") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
 main section.project {
   background: url("../img/caneta.png");
   background-repeat: no-repeat;
@@ -374,19 +374,22 @@ main section.project {
   height: 600px;
 }
 
-main section.project .container {
+main section.project .container,
+main section.company .container {
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
-main section.project .container > div {
+main section.project .container > div,
+main section.company .container > div {
   height: 600px;
   display: flex;
   align-items: center;
 }
 
-main section.project h2 {
+main section.project h2,
+main section.company h2 {
   font-size: 100px;
   text-transform: uppercase;
   color: var(--off-color);
@@ -401,7 +404,16 @@ main section.project p {
   max-width: 350px;
 }
 
-main section.project p em {
+main section.company p {
+  font-size: 20px;
+  color: var(--off-color);
+  line-height: 200%;
+  text-align: right;
+  max-width: 350px;
+}
+
+main section.project p em,
+main section.company p em {
   font-style: normal;
   font-weight: bold;
 }
@@ -469,7 +481,11 @@ main section.contact .content {
   margin-top: 100px;
 }
 
-main section.contact .content > div {
+main section.contact .content > div > a {
+  color: var(--off-color);
+}
+
+main section.contact .content > div a {
   display: flex;
   flex-direction: column;
 }
@@ -553,23 +569,27 @@ main section.contact .content p {
     text-align: center;
   }
 
-  main section.project .container {
+  main section.project .container,
+  main section.company .container {
     flex-direction: column;
     height: 100%;
   }
 
-  main section.project .container > div {
+  main section.project .container > div,
+  main section.company .container > div {
     height: 100%;
     display: flex;
     align-items: center;
   }
   
-  main section.project h2, main section.project p {
+  main section.project h2, main section.project p,
+  main section.company h2, main section.company p {
     margin: 0 auto;
     text-align: center;
   }
 
-  main section.project h2 {
+  main section.project h2,
+  main section.company h2 {
     font-size: 100px;
     text-transform: uppercase;
     color: var(--off-color);
@@ -577,8 +597,8 @@ main section.contact .content p {
     padding-top: 80px;
   }
   
-  main section.project p {
-    font-size: 30px;
+  main section.project p,
+  main section.company p {
     color: var(--off-color);
     line-height: 150%;
     padding-bottom: 80px;
@@ -631,7 +651,7 @@ main section.contact .content p {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
 
   .container {
     max-width: 300px;
@@ -666,7 +686,8 @@ main section.contact .content p {
   }
   
 
-  main section.project h2 {
+  main section.project h2,
+  main section.company h2 {
     font-size: 50px;
     text-transform: uppercase;
     color: var(--off-color);
@@ -681,6 +702,12 @@ main section.contact .content p {
     padding-bottom: 80px;
   }
 
+  main section.company p {
+    font-size: 18px;
+    color: var(--off-color);
+    line-height: 150%;
+    padding-bottom: 80px;
+  }
 
   main section.hero.social .content h2 {
     max-width: 300px;
@@ -713,5 +740,12 @@ main section.contact .content p {
 
   main section.more p {
     font-size: 18px;
+  }
+
+  main section.company h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--off-color);
+    line-height: 200%;
   }
 }
