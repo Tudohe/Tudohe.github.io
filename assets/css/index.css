@@ -158,6 +158,14 @@ header .carousel .controllers button img {
   width: 40px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 3;
+}
+
 main section.products {
   background: url("../img/lampada.jpg");
   background-repeat: no-repeat;
