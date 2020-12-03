@@ -68,6 +68,14 @@ header .carousel #slide2 {
   display: none;
 }
 
+header .carousel #slide3 {
+  background: url("../img/empresa.png") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+  display: none;
+}
+
 header .carousel .content {
   width: calc(100% - 144px);
   height: calc(100vh - 78px - 10px - 100px);
