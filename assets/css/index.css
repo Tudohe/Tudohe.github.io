@@ -1,5 +1,16 @@
 @import url('default.css');
 
+.whatsapp-fixed {
+  position: fixed;
+  left: 5%;
+  bottom: 40px;
+  z-index: 3;
+}
+
+.whatsapp-fixed span {
+  font-size: 1.25em;
+}
+
 @keyframes show-background {
   0% {
     opacity: 0.8;
@@ -69,11 +80,40 @@ header .carousel #slide2 {
 }
 
 header .carousel #slide3 {
+  background: url("../img/extintor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+  display: none;
+}
+
+header .carousel #slide4 {
+  background: url("../img/lamp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+  display: none;
+}
+
+header .carousel #slide5 {
+  background: url("../img/maquina-hidraulica.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+  display: none;
+}
+
+
+header .carousel #slide6 {
   background: url("../img/empresa.png") center;
   background-repeat: no-repeat;
   background-size: cover;
   animation: show-background 1s;
   display: none;
+}
+
+header .carousel #slide6 h2 {
+  font-size: 3em;
 }
 
 header .carousel .content {
@@ -85,7 +125,7 @@ header .carousel .content {
   flex-direction: column;
   justify-content: center;
   padding: 0 32px 0 16px;
-  text-align: right;
+  text-align: left;
   animation: slide-to-position 1s;
 }
 
