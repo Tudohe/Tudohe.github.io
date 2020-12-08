@@ -73,7 +73,6 @@ header .menu nav a + a {
   z-index: 3;
 }
 
-
 .container {
   width: 100%;
   max-width: 1000px;
@@ -126,7 +125,7 @@ footer h3 {
 }
 
 .footer a:hover {
-  color: var(--principal);
+  color: var(--primary-color);
 }
 
 .footer-background {
@@ -164,7 +163,7 @@ footer h3 {
 }
 
 .col-two-third a:hover {
-  color: var(--principal-yellow);
+  color: var(--primary-color);
 }
 
 .col-one-third {
@@ -247,4 +246,42 @@ footer h3 {
   padding: 10px;
   background-color: #58bc55;
   color: var(--off-color);
+}
+
+.whatsapp-balloon {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 3;
+  background: var(--off-color);
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.whatsapp-balloon:hover {
+  background: var(--secondary-color);
+}
+
+.whatsapp-balloon:hover a {
+  color: var(--off-color);
+}
+
+.whatsapp-balloon a {
+  display: block;
+  padding: 16px;
+}
+
+.whatsapp-balloon a div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatsapp-balloon img {
+  width: 30px;
+}
+
+.whatsapp-balloon span {
+  font-size: 16px;
+  margin-left: 16px;
 }

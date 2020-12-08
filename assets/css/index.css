@@ -1,16 +1,5 @@
 @import url('default.css');
 
-.whatsapp-fixed {
-  position: fixed;
-  left: 5%;
-  bottom: 40px;
-  z-index: 3;
-}
-
-.whatsapp-fixed span {
-  font-size: 1.25em;
-}
-
 @keyframes show-background {
   0% {
     opacity: 0.8;
@@ -64,49 +53,52 @@ header .carousel li.selected-slide {
   z-index: 1;
 }
 
+header .carousel .slide {
+  display: flex;
+}
+
+header .carousel .slide .content {
+  flex: 1;
+}
+
+header .carousel .slide button {
+  background: transparent;
+  border: 0;
+}
+
+header .carousel .slide button img {
+  width: 40px;
+}
+
 header .carousel #slide1 {
-  background: url("../img/slide1.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/slide-tudo.jpg") no-repeat;
   background-size: cover;
   animation: show-background 1s;
 }
 
 header .carousel #slide2 {
-  background: url("../img/slide2.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/slide-eletrica.jpg") no-repeat;
   background-size: cover;
   animation: show-background 1s;
   display: none;
 }
 
 header .carousel #slide3 {
-  background: url("../img/extintor.png");
-  background-repeat: no-repeat;
+  background: url("../img/slide-hidraulica.jpg") no-repeat;
   background-size: cover;
   animation: show-background 1s;
   display: none;
 }
 
 header .carousel #slide4 {
-  background: url("../img/lamp.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/slide-spda.jpg") no-repeat;
   background-size: cover;
   animation: show-background 1s;
   display: none;
 }
 
 header .carousel #slide5 {
-  background: url("../img/maquina-hidraulica.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: show-background 1s;
-  display: none;
-}
-
-
-header .carousel #slide6 {
-  background: url("../img/empresa.png") center;
-  background-repeat: no-repeat;
+  background: url("../img/slide-combate-incendio.jpg") no-repeat;
   background-size: cover;
   animation: show-background 1s;
   display: none;
@@ -120,10 +112,10 @@ header .carousel .content {
   width: calc(100% - 144px);
   height: calc(100vh - 78px - 10px - 100px);
   min-height: 460px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   padding: 0 32px 0 16px;
   text-align: left;
   animation: slide-to-position 1s;
@@ -136,13 +128,13 @@ header .carousel .content p {
 }
 
 header .carousel .content h1 {
-  font-size: 3em;
+  font-size: 72px;
   font-weight: bold;
   margin: 0 0 16px 0;
 }
 
 header .carousel .content h2 {
-  font-size: 2em;
+  font-size: 40px;
   font-weight: bold;
   margin: 0  0 16px 0;
 }
@@ -152,13 +144,21 @@ header .carousel .content p {
   line-height: 200%;
 }
 
+header .carousel .content a {
+  margin-top: 50px;
+  font-size: 24px;
+  background-color: var(--primary-color);
+  color: var(--off-color);
+  padding: 24px 100px;
+  border-radius: 3px;
+  max-width: 600px;
+  text-align: center;
+}
+
 header .carousel .indicators {
-  width: calc(100% - 144px);
-  height: calc(100vh - 78px - 10px - 100px);
-  min-height: 460px;
-  margin: 0 auto;
-  position: relative;
   z-index: 2;
+  height: 50px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -187,7 +187,6 @@ header .carousel .controllers {
   width: 100%;
   height: calc(100vh - 78px - 10px);
   position: absolute;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
@@ -206,6 +205,10 @@ header .carousel .controllers button img {
   width: 40px;
 }
 
+header .carousel .carousel-content {
+  display: flex;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -215,8 +218,7 @@ header .carousel .controllers button img {
 }
 
 main section.products {
-  background: url("../img/lampada.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/lampada.jpg") no-repeat;
   background-size: cover;
   height: 600px;
   padding: 100px 0;
@@ -416,64 +418,6 @@ main section.hero.fire .image .cover {
   width: 600px;
 }
 
-main section.company {
-  background: url("../img/empresa.png") center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-}
-
-main section.project {
-  background: url("../img/caneta.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-}
-
-main section.project .container,
-main section.company .container {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
-main section.project .container > div,
-main section.company .container > div {
-  height: 600px;
-  display: flex;
-  align-items: center;
-}
-
-main section.project h2,
-main section.company h2 {
-  font-size: 100px;
-  text-transform: uppercase;
-  color: var(--off-color);
-  line-height: 200%;
-}
-
-main section.project p {
-  font-size: 48px;
-  color: var(--off-color);
-  line-height: 200%;
-  text-align: right;
-  max-width: 350px;
-}
-
-main section.company p {
-  font-size: 20px;
-  color: var(--off-color);
-  line-height: 200%;
-  text-align: right;
-  max-width: 350px;
-}
-
-main section.project p em,
-main section.company p em {
-  font-style: normal;
-  font-weight: bold;
-}
-
 main section.hero.social .content {
   justify-content: flex-start;
   align-items: flex-end;
@@ -484,7 +428,7 @@ main section.hero.social .content h2 {
   text-align: right;
   font-size: 48px;
   margin-bottom: 40px;
-  width: 800px;
+  width: 1200px;
 }
 
 main section.hero.social .content p {
@@ -505,9 +449,8 @@ main section.hero.social .image {
 }
 
 main section.hero.social .image .cover {
-  background: url("../img/top-left.svg");
   position: absolute;
-  background-position: bottom left;
+  background: url("../img/top-left.svg") bottom left;
 }
 
 main section.contact {

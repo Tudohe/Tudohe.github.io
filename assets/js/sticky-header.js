@@ -1,10 +1,11 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+  setStickyHeader()
+};
 
-var header = document.getElementById("myHeader");
+const header = document.getElementById("menubar");
+const sticky = header.offsetTop;
 
-var sticky = header.offsetTop;
-
-function myFunction() {
+function setStickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {

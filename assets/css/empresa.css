@@ -3,21 +3,16 @@
 h1, h2, h3, h4 {
   font-weight: 100;
 }
-
-strong {
-  font-weight: bold;
-}
  
 main h1 {
   text-align: center;
   margin: 60px 0;
   font-size: 100px;
-  font-weight: 100;
 }
 
 main p {
   margin: 0;
-  line-height: 200%;
+  line-height: 150%;
 }
 
 hr {
@@ -26,23 +21,6 @@ hr {
   height: 5px;
   background-color: var(--primary-color);
   border: 0;
-}
-
-.img-1 p, .img-2 p, .img-3 p {
-  max-width: 272px;
-}
-
-.information {
-  display: flex;
-  justify-content: space-between;
-}
-
-.information h4 {
-  font-size: 20px;
-}
-
-.information h4, .information p {
-  margin-top: 30px;
 }
 
 .social-part {
@@ -57,6 +35,7 @@ hr {
 .social-part img {
   position: relative;
   top: 23px;
+  max-height: 380px;
 }
 
 .social {
@@ -87,57 +66,6 @@ section > h3 {
   height: 164px;
   background-color: var(--primary-color);
   position: relative;
-}
-
-footer h3 {
-  color: var(--off-color);
-  font-size: 36px;
-}
-
-.footer p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16px;
-}
-
-.footer a {
-  font-size: 30px;
-}
-
-.footer a:hover {
-  color: var(--secondary-color);
-}
-
-.footer-background {
-  width: 100%;
-  background-color: var(--off-dark-color);
-  min-height: 450px;
-  height: 100%;
-}
-
-.footer-background h2, .footer-background p {
-  color: var(--off-color);
-}
-
-.footer-background h2 {
-  font-size: 36px;
-  margin: 0;
-  padding-top: 77px;
-}
-
-.footer-background p {
-  margin: 0;
-  padding-bottom: 41px;
-  max-width: 272px;
-}
-
-.footer-background a {
-  color: var(--off-color);
-  display: flex;
-  flex-direction: column;
-  line-height: 200%;
 }
 
 .col-two-third {

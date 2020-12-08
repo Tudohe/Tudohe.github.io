@@ -23,7 +23,7 @@ function previous(e) {
   selectedSlide.style.display = 'none';
   
   previousSlide.classList.add('selected-slide');
-  previousSlide.style.display = 'initial';
+  previousSlide.style.display = 'flex';
 
   selectedIndicator.classList.remove('selected');
   previousIndicator.classList.add('selected');
@@ -52,7 +52,7 @@ function next(e) {
   selectedSlide.style.display = 'none';
   
   nextSlide.classList.add('selected-slide');
-  nextSlide.style.display = 'initial';
+  nextSlide.style.display = 'flex';
 
   selectedIndicator.classList.remove('selected');
   nextIndicator.classList.add('selected');
@@ -83,18 +83,22 @@ function Timer(fn, timer) {
   }
 }
 
-document.getElementById('previous').addEventListener('click', function(e) {
-  rotateSlides.reset(5000);
-  previous(e);
+Array.prototype.slice.call(document.getElementsByClassName('previous')).map(previousButton => {
+  previousButton.addEventListener('click', function(e) {
+    rotateSlides.reset(10000);
+    previous(e);
+  });
 });
 
-document.getElementById('next').addEventListener('click', function(e) {
-  rotateSlides.reset(5000);
-  next(e);
+Array.prototype.slice.call(document.getElementsByClassName('next')).map(previousButton => {
+  previousButton.addEventListener('click', function(e) {
+    rotateSlides.reset(10000);
+    next(e);
+  });
 });
 
 window.onload = function() {   
   rotateSlides = new Timer(function() {
     document.getElementById('next').click();
-  }, 5000);
+  }, 10000);
 }

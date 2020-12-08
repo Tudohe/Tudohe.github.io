@@ -10,81 +10,94 @@
 </head>
   <body>
     <header>
-      <div class="whatsapp-fixed"> 
-        <div id="">
-          <div>
-            <a target="_blank" href="#">
-            <img src="assets/img/whatsapp.svg" width="40" alt=""><span>Posso ajudar?</span>
-            </a>
-          </div>
+    <div class="whatsapp-balloon">
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=556533210009">
+        <div>
+          <img src="assets/img/whatsapp.svg" alt="">
+          <span>Posso ajudar?</span>
         </div>
+      </a>
     </div>
       <div class="carousel">
-        <ul class="slides">
-          <li id="slide1" class="selected-slide">
-            <div class="content">
-              <h1>TUDO</h1>
-              <h2>Hidráulica e Elétrica</h2>
-              <p>Hidráulica</p>
-              <p>Elétrica</p>
-              <p>SPDA</p>
-              <p>Combate a incêndio</p>
-            </div>
-          </li>
-          <li id="slide2">
-            <div class="content">
-              <h1>SPDA</h1>
-              <h2>Sistema de Proteção contra Descargas Elétricas (Pára-raios)</h2>
-              <p>Materiais para SPDA</p>
-              <p>Mão de obra especializada</p>
-            </div>
-          </li>
-          <li id="slide3">
-            <div class="content">
-              <h1>Combate a Incêndio</h1>
-              <h2>Sistema de Proteção contra Combate a Incêndio</h2>
-              <p>Materiais para Combate a Incêndio</p>
-              <p>Mão de obra especializada</p>
-            </div>
-          </li>
-          <li id="slide4">
-            <div class="content">
-              <h1>Elétrica</h1>
-              <h2>Produtos para te ajudarem na elétrica</h2>
-              <p>Materiais para Elétrica</p>
-              <p>Mão de obra especializada</p>
-            </div>
-          </li>
-          <li id="slide5">
-            <div class="content">
-              <h1>Hidráulica</h1>
-              <h2>Produtos para te ajudarem na hidráulica</h2>
-              <p>Materiais para Hidráulica</p>
-              <p>Mão de obra especializada</p>
-            </div>
-          </li>
-          <li id="slide6">
-            <div class="content">
-              <div>
-                <h2>A <strong>EMPRESA</strong></h2>
-              </div>
-              <div>
+        <div class="carousel-content">
+          <ul class="slides">
+            <li id="slide1" class="slide selected-slide">
+              <button class="previous">
+                <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
+              </button>
+              <div class="content">
+                <h1>TUDO</h1>
+                <h2>Hidráulica e Elétrica</h2>
                 <p>
-                  A <strong>TUDO Hidráulica e Elétrica</strong> atua no Centro-Oeste e Norte do Brasil. 
-                  Com amplo portfólio, que conta com mais de 100 marcas nacionais e internacionais de hidráulica, 
+                  A <strong>TUDO Hidráulica e Elétrica</strong> atua no Centro-Oeste e Norte do Brasil.
+                  Com amplo portfólio, que conta com mais de 100 marcas nacionais e internacionais de hidráulica,
                   elétrica, SPDA, combate à incêndio e gás.
                 </p>
+                <a href="empresa.html">Conheça a empresa</a>
               </div>
-            </div>
-          </li>
-        </ul>
-        <div class="controllers">
-          <button id="previous" class="previous">
-            <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
-          </button>
-          <button id="next" class="next">
-            <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
-          </button>
+              <button class="next">
+                <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
+              </button>
+            </li>
+            <li id="slide2" class="slide">
+              <button class="previous">
+                <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
+              </button>
+              <div class="content">
+                <h1>Elétrica</h1>
+                <h2>Padrões, cabos, materias para iluminação e muito mais para a sua obra</h2>
+                <p>TUDO em elétrica para a sua obra, de padrão elétrico até ao acabamento em tomadas, interruptores lâmpadas e outros. As melhores marcas em condutores, canaletas, caixas de passagem e mangueiras corrugais. Além de termos um time de especialistas na parte elétrica para melhor atende-los.</p>
+                <a href="eletrica.html">Quero saber mais</a>
+              </div>
+              <button class="next">
+                <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
+              </button>
+            </li>
+            <li id="slide3" class="slide">
+              <button class="previous">
+                <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
+              </button>
+              <div class="content">
+                <h1>Hidráulica</h1>
+                <h2>Tubos, conexões e muito mais</h2>
+                <p>Tem um projeto? Fazemos seu orçamento.</p>
+                <a href="hidraulica.html">Quero saber mais</a>
+              </div>
+              <button class="next">
+                <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
+              </button>
+            </li>
+            <li id="slide4" class="slide">
+              <button class="previous">
+                <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
+              </button>
+              <div class="content">
+                <h1>SPDA</h1>
+                <h2>Sistema de Proteção contra Descargas Elétricas (Pára-raios)</h2>
+                <p>De captor até condutores de descida, quando o assunto for Sistema de Projetação de Descargas Atmosféricas (SPDA). Você pode contar com a Tudo Hidráulica e Elétrica. Envie para nós o seu projeto.</p>
+                <a href="spda.html">Quero saber mais</a>
+              </div>
+              <button class="next">
+                <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
+              </button>
+            </li>
+            <li id="slide5" class="slide">
+              <button class="previous">
+                <img src="assets/img/chevron-left.svg" alt="Seta para esquerda" />
+              </button>
+              <div class="content">
+                <h1>Combate a Incêndio</h1>
+                <h2>Sistema de Proteção contra Combate a Incêndio</h2>
+                <p>Mangueiras</p>
+                <p>Hidrantes</p>
+                <p>Centrais de alarme</p>
+                <a href="incendio.html">Quero saber mais</a>
+              </div>
+              <button class="next">
+                <img src="assets/img/chevron-right.svg" alt="Seta para direita" />
+              </button>
+            </li>
+          </ul>
         </div> 
         <div class="indicators">
           <button class="indicator1 selected"></button>
@@ -92,19 +105,18 @@
           <button class="indicator3"></button>
           <button class="indicator4"></button>
           <button class="indicator5"></button>
-          <button class="indicator6"></button>
         </div>
       </div>
-      <div id="myHeader">
+      <div id="menubar">
         <div class="container">
           <div class="menu">
             <a href="index.html">
               <img src="assets/img/logo.svg" alt="Logotipo da Tudo Hidráulica e Elétrica">
             </a>
             <nav>
-              <a href="#company">Empresa</a>
-              <a href="#products">Produtos</a>
-              <a href="#social">Social</a>
+              <a href="empresa.html">Empresa</a>
+              <a href="eletrica.html">Produtos</a>
+              <a href="parceiros.html">Parceiros</a>
               <a href="contato.html">Contato</a>
             </nav>
           </div>
@@ -112,51 +124,6 @@
       </div>
     </header>
     <main>
-      <section id="products" class="products">
-        <div class="container">
-          <h2><span class="thin">Nossos</span> Produtos</h2>
-          <div class="selector">
-            <div class="titles">
-              <h3 data-title="produto-eletrica" onclick="selectProduct(this)" class="selected">Elétrica</h3>
-              <h3 data-title="produto-hidraulica" onclick="selectProduct(this)">Hidráulica</h3>
-              <h3 data-title="produto-spda" onclick="selectProduct(this)">SPDA</h3>
-              <h3 data-title="produto-combate-incendio" onclick="selectProduct(this)">Combate a incêndio</h3>
-            </div>
-            <div class="contents">
-              <div class="eletrica selected">
-                <ul>
-                  <li>Materiais e ferramentas</li>
-                  <li>Cabos e conexões</li>
-                  <li>Iluminação</li>
-                </ul>
-              </div>
-              <div class="hidraulica">
-                <ul>
-                  <li>Tubos e conexões</li>
-                  <li>Máquinas especializadas</li>
-                  <li>Materiais em geral</li>
-                </ul>
-              </div>
-              <div class="spda">
-                <ul>
-                  <li>Materiais para pára-raios</li>
-                  <li>Mão de obra especializada</li>
-                </ul>
-              </div>
-              <div class="combate-incendio">
-                <ul>
-                  <li>Extintores</li>
-                  <li>EPIs</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="all-products">
-            <span>Ver todos os produtos</span>
-            <img src="assets/img/chevron-right-yellow.svg" alt="Seta para direita" />
-          </a>
-        </div> 
-      </section> 
       <section class="hero eletric">
         <div class="content">
           <h2><div class="thin">Tudo para</div> Elétrica</h2>
@@ -272,8 +239,8 @@
             <div class="col-one-third col-last">
               <p>Nos acompanhe</p>
               <div class="social-network">
-                <a href="http://instagram.com/" target="_blank"><img src="assets/img/instagram.svg" alt="instagram logo"></a>
-                <a href="http://facebook.com/" target="_blank"><img src="assets/img/facebook.svg" alt="facebook logo"></a>
+                <a href="https://www.instagram.com/tudo.hidraulicaeletrica/" target="_blank"><img src="assets/img/instagram.svg" alt="instagram logo"></a>
+                <a href="https://www.facebook.com/Tudohidraulicaeletrica" target="_blank"><img src="assets/img/facebook.svg" alt="facebook logo"></a>
               </div>
             </div>
           </div>
