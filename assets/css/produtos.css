@@ -20,6 +20,10 @@ main p {
   line-height: 200%;
 }
 
+.title p { 
+  text-align: center;
+}
+
 hr {
   margin: 60px auto;
   width: 60px;
