@@ -104,8 +104,12 @@ header .carousel #slide5 {
   display: none;
 }
 
-header .carousel #slide6 h2 {
-  font-size: 3em;
+header .carousel #slide6 {
+  background: url("../img/gas-imagem.jpg") no-repeat;
+  background-size: cover;
+  animation: show-background 1s;
+  display: none;
+
 }
 
 header .carousel .content {
