@@ -132,6 +132,7 @@ footer h3 {
   width: 100%;
   background-color: #656665;
   height: 100%;
+  padding-bottom: 70px;
 }
 
 .footer-background h2, .footer-background p {
@@ -204,6 +205,10 @@ footer h3 {
 
 .social-network a:hover{
   opacity: 0.8;
+}
+
+.ghe img {
+  margin-top: 30px;
 }
 
 .spacer {
