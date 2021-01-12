@@ -105,7 +105,7 @@ header .carousel #slide5 {
 }
 
 header .carousel #slide6 {
-  background: url("../img/gas-imagem.jpg") no-repeat;
+  background: url("../img/gas-imagem.jpg") no-repeat; 
   background-size: cover;
   animation: show-background 1s;
   display: none;
@@ -222,7 +222,7 @@ header .carousel .carousel-content {
 }
 
 main section.products {
-  background: url("../img/lampada.jpg") no-repeat;
+  background: url("../img/Disjuntor.jpg") no-repeat;
   background-size: cover;
   height: 600px;
   padding: 100px 0;
@@ -356,7 +356,7 @@ main section.hero .cover {
 }
 
 main section.hero.eletric .image {
-  background: url("../img/lampada-pequena.jpg");
+  background: url("../img/disjuntor-1.jpg");
   right: 0;
 }
 
@@ -374,7 +374,7 @@ main section.hero.hidraulic .content h2 {
 }
 
 main section.hero.hidraulic .image {
-  background: url("../img/maquina-hidraulica.png");
+  background: url("../img/canos-para-o-site.png");
   left: 0;
   bottom: 0;
 }
